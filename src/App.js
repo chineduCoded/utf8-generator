@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import HomeScreen from "./components/home/HomeScreen"
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <HomeScreen />
+
+      {/* Testing if it works */}
+      {/* <div style={{display: "flex", gap: "20px"}}>
+        <div>
+          {
+            dec.map((x, i) => (
+              <p key={i} style={{fontSize: "20px"}}>{x}</p>
+            ))
+          }
+        </div>
+        <div>
+          {
+            char.map((ch, i) => (
+              <p key={i} style={{fontSize: "20px"}}>{ch}</p>
+            ))
+          }
+        </div>
+      <div>
+      {
+        hexCode.map((hex, i) => (
+          <p key={i} style={{fontSize: "20px"}}>{hex}</p>
+        ))
+      }
+      </div>
+      </div> */}
     </div>
   );
 }
